@@ -1,0 +1,186 @@
+#Activities star{
+box-sizing: border-box;
+
+}
+
+#Activities .card:hover{
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,.2);
+}
+
+#Activities div .card{
+	margin-top: 8%;
+	padding-bottom: 0%;
+	margin-bottom: 13%;
+	height: max-content;
+  padding: 0px;
+	box-shadow: 10px 17.3px 50px 0 rgba(0,0,0,.2);
+}
+
+#Activities p.info{
+  font-size: 12px;
+}
+
+#Activities a.info{
+  font-size: 13px;
+}
+
+
+#Activities hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+
+#Activities .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+#Activities .hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(#9c92a2, #31655d);
+  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+}
+
+#Activities .hovereffect:hover .overlay {
+  background-image: linear-gradient(#31655d, #31655d);  
+
+}
+
+#Activities .hovereffect img {
+  display: block;
+  position: relative;
+}
+
+#Activities .hovereffect h2 {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 3%;
+  padding-top: 8%;
+  margin-top: -1%;
+  -webkit-transform: translateY(65px);
+  -ms-transform: translateY(65px);
+  transform: translateY(65px);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s  ease;
+}
+
+#Activities .hovereffect .hide{
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 90%;
+  padding: 10px;
+  margin-bottom: 3%;
+  padding-top: 8%;
+  margin-top: -1%;
+  -webkit-transform: translateY(65px);
+  -ms-transform: translateY(65px);
+  transform: translateY(65px);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s  ease;
+}
+
+#Activities .hovereffect:hover h2 {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+  font-size: 19px;
+}
+
+#Activities .hovereffect:hover .hide {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+  font-size: 19px;
+  display: none;
+}
+
+#Activities .hovereffect .info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 6px 4px;
+  color: #fff;
+  border: 1px solid #fff          ;
+  background-color: transparent;
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s  ease;
+  font-weight: normal;
+}
+
+#Activities .hovereffect:hover .info {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+#Activities .hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+#Activities {
+  margin-bottom: 4%;
+}
+
+
+/*------------media queries------------*/
+
+@media only screen and (max-width: 768px){
+#Activities div .card{
+  height: 90%;
+  /*padding-bottom: 25%;*/
+  width: 109%;
+}
+
+#Activities p.info{
+  font-size: 10px;
+}
+
+#Activities .hovereffect .overlay {
+  height: 118%;
+}
+
+#Activities a.info{
+  font-size: 12px;
+}
+}
+
+@media only screen and (max-width: 979px){
+  #Activities div .card{
+  height: 103%;
+  /*padding-bottom: 25%;*/
+  width: 109%;
+}
+
+#Activities .hovereffect {
+ margin-bottom: 23%;
+
+}
+
+}
